@@ -1,7 +1,13 @@
-import '../styles/global.css'
+import Header from '../src/components/header'
+import GlobalStyle from '../styles/global'
 
-function MyApp() {
-  return <h1>Teste</h1>
+function MyApp({ Component, pageProps }: any) {
+  return (
+    <>
+      <GlobalStyle />
+      <Header />
+    </>
+  )
 }
 
 export default MyApp
