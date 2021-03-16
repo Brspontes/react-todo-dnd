@@ -26,6 +26,8 @@ export default function Card({ data, index, listIndex }: any) {
       const draggedListIndex = item.listIndex
       const targetListIndex  = listIndex
 
+      console.log(`TARGET CARD: ${targetIndex} | TARGET LIST: ${listIndex}`)
+
       if(draggedIndex === targetIndex && draggedListIndex === targetListIndex) {
         return
       }

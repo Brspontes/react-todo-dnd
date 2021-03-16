@@ -1,13 +1,14 @@
 import React from 'react'
 import { MdAdd } from 'react-icons/md'
-
+import { useDrop } from 'react-dnd'
 import Card from '../card'
 import { Container } from './styles'
 
 
 export default function List({ data, index: listIndex }: any) {
+
   return (
-    <Container>
+    <Container ref={dropRef}>
       <header>
         <h2>{data.title}</h2>
         {data.creatable && (
